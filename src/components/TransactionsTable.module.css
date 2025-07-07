@@ -1,0 +1,91 @@
+.tableContainer {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.1);
+  margin-top: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.tableTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  color: var(--text-color);
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.table th {
+  text-align: left;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color-light);
+  color: var(--text-color);
+}
+
+.table tbody tr:hover {
+  background-color: var(--hover-bg);
+}
+
+.description {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.actionButton {
+  background-color: rgba(25, 118, 210, 0.1);
+  border: none;
+  cursor: pointer;
+  color: var(--accent-color);
+  transition: all 0.2s ease;
+  padding: 8px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+.actionButton:hover {
+  color: white;
+  background-color: var(--accent-color);
+  box-shadow: 0 2px 5px rgba(25, 118, 210, 0.3);
+  transform: translateY(-2px);
+}
+
+.actionIcon {
+  width: 18px;
+  height: 18px;
+  transition: all 0.2s ease;
+}
+
+@media (max-width: 768px) {
+  .tableContainer {
+    padding: 1rem;
+  }
+  
+  .table th, .table td {
+    padding: 0.75rem 0.5rem;
+  }
+  
+  .description {
+    max-width: 100px;
+  }
+}

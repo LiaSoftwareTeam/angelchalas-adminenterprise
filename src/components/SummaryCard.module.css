@@ -1,0 +1,89 @@
+.card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.1);
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-width: 220px;
+  flex: 1;
+  border: 1px solid var(--border-color);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(25, 118, 210, 0.15);
+}
+
+.iconContainer {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background-color: var(--icon-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.content {
+  flex: 1;
+}
+
+.title {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 0 0 0.5rem 0;
+  font-weight: 500;
+}
+
+.value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  color: var(--text-color);
+}
+
+.trend {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.trendUp {
+  color: var(--success-color);
+}
+
+.trendDown {
+  color: var(--danger-color);
+}
+
+.trendIcon {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    min-width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 1rem;
+  }
+  
+  .iconContainer {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .value {
+    font-size: 1.25rem;
+  }
+}

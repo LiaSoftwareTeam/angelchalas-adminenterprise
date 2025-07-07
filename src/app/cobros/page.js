@@ -3,8 +3,8 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 
-// Importar el Dashboard con carga dinámica para evitar problemas con SSR y ECharts
-const Dashboard = dynamic(() => import('../components/Dashboard'), {
+// Importar el componente de Cobros con carga dinámica para evitar problemas con SSR
+const CobrosPage = dynamic(() => import('../../components/CobrosPage'), {
   ssr: false,
   loading: () => (
     <div style={{ 
@@ -14,11 +14,11 @@ const Dashboard = dynamic(() => import('../components/Dashboard'), {
       height: '100vh',
       color: 'var(--text-color)'
     }}>
-      Cargando dashboard...
+      Cargando página de cobros...
     </div>
   )
 });
 
-export default function Home() {
-  return <Dashboard />;
+export default function Cobros() {
+  return <CobrosPage />;
 }

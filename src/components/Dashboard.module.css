@@ -1,0 +1,80 @@
+.dashboardContainer {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--background);
+}
+
+.mainContent {
+  flex: 1;
+  margin-left: 70px;
+  transition: margin-left 0.3s ease;
+}
+
+.contentWithExpandedSidebar {
+  margin-left: 250px;
+}
+
+.contentWrapper {
+  padding: 1.5rem 2rem;
+}
+
+.summaryCards {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.chartsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.chartItem {
+  min-height: 350px;
+}
+
+@media (max-width: 1200px) {
+  .chartsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .chartItem:last-child {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    margin-left: 70px;
+  }
+  
+  .contentWithExpandedSidebar {
+    margin-left: 200px;
+  }
+  
+  .contentWrapper {
+    padding: 1rem;
+  }
+  
+  .summaryCards {
+    gap: 1rem;
+  }
+  
+  .chartsContainer {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .chartItem:last-child {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .summaryCards {
+    flex-direction: column;
+  }
+}
