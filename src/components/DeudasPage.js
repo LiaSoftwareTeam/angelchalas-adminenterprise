@@ -68,7 +68,7 @@ const deudasSummaryData = [
 // Datos para el gráfico de deudas por tipo
 const deudasPorTipoOptions = {
   title: {
-    text: 'Deudas por tipo',
+    text: '',
     left: 'center',
     textStyle: {
       color: '#0a2463'
@@ -124,7 +124,7 @@ const deudasPorTipoOptions = {
 // Datos para el gráfico de deudas activas vs vencidas
 const deudasActivasVsVencidasOptions = {
   title: {
-    text: 'Deudas activas vs vencidas',
+    text: '',
     left: 'center',
     textStyle: {
       color: '#0a2463'
@@ -211,7 +211,7 @@ const deudasActivasVsVencidasOptions = {
 // Datos para el gráfico de evolución del ratio de endeudamiento
 const ratioEndeudamientoOptions = {
   title: {
-    text: 'Evolución del ratio de endeudamiento',
+    text: '',
     left: 'center',
     textStyle: {
       color: '#0a2463'

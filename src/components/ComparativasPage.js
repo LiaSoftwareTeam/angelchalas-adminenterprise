@@ -67,7 +67,7 @@ const comparativasSummaryData = [
 // Datos para el gráfico de comparativa mensual
 const comparativaMensualOptions = {
   title: {
-    text: 'Comparativa mensual: Ingresos vs Egresos',
+    text: '',
     left: 'center',
     textStyle: {
       color: '#0a2463'
@@ -169,7 +169,7 @@ const comparativaMensualOptions = {
 // Datos para el gráfico de comparativa trimestral
 const comparativaTrimestreOptions = {
   title: {
-    text: 'Comparativa trimestral: Ingresos vs Egresos',
+    text: '',
     left: 'center',
     textStyle: {
       color: '#0a2463'
@@ -271,7 +271,7 @@ const comparativaTrimestreOptions = {
 // Datos para el gráfico de comparativa anual
 const comparativaAnualOptions = {
   title: {
-    text: 'Comparativa anual: Ingresos vs Egresos',
+    text: '',
     left: 'center',
     textStyle: {
       color: '#0a2463'

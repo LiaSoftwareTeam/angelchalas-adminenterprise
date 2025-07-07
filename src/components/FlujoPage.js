@@ -64,7 +64,7 @@ const flujoSummaryData = [
 // Datos para el gráfico de pronóstico de flujo de caja
 const pronosticoFlujoOptions = {
   title: {
-    text: 'Pronóstico de flujo de caja a 90 días',
+    text: '',
     left: 'center',
     textStyle: {
       color: '#0a2463'
@@ -163,7 +163,7 @@ const pronosticoFlujoOptions = {
 // Datos para el gráfico de ingresos vs egresos proyectados
 const ingresosEgresosProyectadosOptions = {
   title: {
-    text: 'Ingresos vs Egresos proyectados',
+    text: '',
     left: 'center',
     textStyle: {
       color: '#0a2463'
@@ -256,7 +256,7 @@ const ingresosEgresosProyectadosOptions = {
 // Datos para el gráfico de índice de liquidez proyectado
 const indiceLiquidezOptions = {
   title: {
-    text: 'Índice de liquidez proyectado',
+    text: '',
     left: 'center',
     textStyle: {
       color: '#0a2463'

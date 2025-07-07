@@ -65,7 +65,7 @@ const cobrosSummaryData = [
 // Datos para el gráfico de cobros recibidos vs pendientes
 const cobrosComparativaOptions = {
   title: {
-    text: 'Cobros recibidos vs pendientes',
+    text: '',
     left: 'center',
     textStyle: {
       color: '#0a2463'
@@ -158,7 +158,7 @@ const cobrosComparativaOptions = {
 // Datos para el gráfico de tendencia de cobros
 const tendenciaCobrosOptions = {
   title: {
-    text: 'Tendencia de cobros en el tiempo',
+    text: '',
     left: 'center',
     textStyle: {
       color: '#0a2463'
@@ -237,7 +237,7 @@ const tendenciaCobrosOptions = {
 // Datos para el gráfico de eficiencia de cobros
 const eficienciaCobrosOptions = {
   title: {
-    text: 'Eficiencia de cobros por mes',
+    text: '',
     left: 'center',
     textStyle: {
       color: '#0a2463'

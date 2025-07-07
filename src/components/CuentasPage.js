@@ -70,7 +70,7 @@ const cuentasSummaryData = [
 // Datos para el gráfico de cuentas por cobrar por antigüedad
 const cuentasPorCobrarOptions = {
   title: {
-    text: 'Cuentas por cobrar por antigüedad',
+    text: '',
     left: 'center',
     textStyle: {
       color: '#0a2463'
@@ -181,7 +181,7 @@ const cuentasPorCobrarOptions = {
 // Datos para el gráfico de cuentas por pagar por antigüedad
 const cuentasPorPagarOptions = {
   title: {
-    text: 'Cuentas por pagar por antigüedad',
+    text: '',
     left: 'center',
     textStyle: {
       color: '#0a2463'
@@ -292,7 +292,7 @@ const cuentasPorPagarOptions = {
 // Datos para el gráfico de comparativa de cuentas por cobrar vs por pagar
 const comparativaCuentasOptions = {
   title: {
-    text: 'Comparativa: Cuentas por cobrar vs por pagar',
+    text: '',
     left: 'center',
     textStyle: {
       color: '#0a2463'

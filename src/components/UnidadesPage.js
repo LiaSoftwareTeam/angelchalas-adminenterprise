@@ -65,7 +65,7 @@ const unidadesSummaryData = [
 // Datos para el gráfico de ingresos por unidad de negocio
 const ingresosPorUnidadOptions = {
   title: {
-    text: 'Ingresos por unidad de negocio',
+    text: '',
     left: 'center',
     textStyle: {
       color: '#0a2463'
@@ -176,7 +176,7 @@ const ingresosPorUnidadOptions = {
 // Datos para el gráfico de rentabilidad por unidad de negocio
 const rentabilidadPorUnidadOptions = {
   title: {
-    text: 'Rentabilidad por unidad de negocio',
+    text: '',
     left: 'center',
     textStyle: {
       color: '#0a2463'
@@ -275,7 +275,7 @@ const rentabilidadPorUnidadOptions = {
 // Datos para el gráfico de distribución de ingresos por unidad
 const distribucionIngresosOptions = {
   title: {
-    text: 'Distribución de ingresos por unidad',
+    text: '',
     left: 'center',
     textStyle: {
       color: '#0a2463'

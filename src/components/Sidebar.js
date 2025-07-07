@@ -126,7 +126,7 @@ const Sidebar = ({ onToggle }) => {
             </Link>
           </li>
           <li>
-            <Link href="/estadisticas">
+            {/* <Link href="/estadisticas">
               <div className={styles.navItem} title="Estadísticas">
                 <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <line x1="18" y1="20" x2="18" y2="10"></line>
@@ -135,10 +135,10 @@ const Sidebar = ({ onToggle }) => {
                 </svg>
                 <span className={styles.navText}>Estadísticas</span>
               </div>
-            </Link>
+            </Link> */}
           </li>
           <li>
-            <Link href="/transacciones">
+            {/* <Link href="/transacciones">
               <div className={styles.navItem} title="Transacciones">
                 <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
@@ -146,7 +146,7 @@ const Sidebar = ({ onToggle }) => {
                 </svg>
                 <span className={styles.navText}>Transacciones</span>
               </div>
-            </Link>
+            </Link> */}
           </li>
           <li>
             <Link href="/configuracion">
