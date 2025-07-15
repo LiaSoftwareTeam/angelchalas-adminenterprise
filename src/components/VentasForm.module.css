@@ -1,0 +1,151 @@
+.formContainer {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.1);
+  margin-top: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.formTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 1.5rem 0;
+  color: var(--text-color);
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formLabel {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.formInput,
+.formSelect,
+.formTextarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  font-size: 0.9rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.formInput:focus,
+.formSelect:focus,
+.formTextarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(var(--accent-color-rgb), 0.2);
+}
+
+.formTextarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.cancelButton {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: transparent;
+  color: var(--text-secondary);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cancelButton:hover {
+  background-color: var(--hover-bg);
+  color: var(--text-color);
+}
+
+.submitButton {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--accent-color);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.submitButton:hover {
+  background-color: #0d47a1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(var(--accent-color-rgb), 0.3);
+}
+
+.addButton {
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--accent-color);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.addButton:hover {
+  background-color: #0d47a1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(var(--accent-color-rgb), 0.3);
+}
+
+.addIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.fullWidth {
+  grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .fullWidth {
+    grid-column: span 1;
+  }
+  
+  .formActions {
+    flex-direction: column-reverse;
+  }
+  
+  .cancelButton,
+  .submitButton {
+    width: 100%;
+    justify-content: center;
+  }
+}
