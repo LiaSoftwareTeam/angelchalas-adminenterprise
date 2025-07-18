@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import Sidebar from './Sidebar';
 import Toolbar from './Toolbar';
 import SummaryCard from './SummaryCard';
@@ -320,8 +321,10 @@ const VentasPage = () => {
     setSidebarExpanded(expanded);
   };
   
+  const router = useRouter();
+  
   const navigateToGestion = () => {
-    window.location.href = '/ventas/gestion';
+    router.push('/ventas/gestion');
   };
 
   return (

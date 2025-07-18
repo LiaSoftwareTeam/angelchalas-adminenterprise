@@ -36,6 +36,242 @@
   min-height: 350px;
 }
 
+/* Estilos para tablas */
+.tableContainer {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.1);
+  margin-top: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.tableTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  color: var(--text-color);
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.table th {
+  text-align: left;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color-light);
+  color: var(--text-color);
+}
+
+.table tbody tr:hover {
+  background-color: var(--hover-bg);
+}
+
+.description {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Estilos para botones de acción */
+.actionButton {
+  background-color: rgba(25, 118, 210, 0.1);
+  border: none;
+  cursor: pointer;
+  color: var(--accent-color);
+  transition: all 0.2s ease;
+  padding: 8px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+.actionButton:hover {
+  color: white;
+  background-color: var(--accent-color);
+  box-shadow: 0 2px 5px rgba(25, 118, 210, 0.3);
+  transform: translateY(-2px);
+}
+
+.actionIcon {
+  width: 18px;
+  height: 18px;
+  transition: all 0.2s ease;
+}
+
+/* Estilos para formularios */
+.formContainer {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.1);
+  margin-top: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.formTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 1.5rem 0;
+  color: var(--text-color);
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formLabel {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.formInput,
+.formSelect,
+.formTextarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  font-size: 0.9rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.formInput:focus,
+.formSelect:focus,
+.formTextarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(var(--accent-color-rgb), 0.2);
+}
+
+.formTextarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.cancelButton {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: transparent;
+  color: var(--text-secondary);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cancelButton:hover {
+  background-color: var(--hover-bg);
+  color: var(--text-color);
+}
+
+.submitButton {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--accent-color);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.submitButton:hover {
+  background-color: #0d47a1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(var(--accent-color-rgb), 0.3);
+}
+
+.addButton {
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--accent-color);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.addButton:hover {
+  background-color: #0d47a1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(var(--accent-color-rgb), 0.3);
+}
+
+.addIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.fullWidth {
+  grid-column: span 2;
+}
+
+/* Estilos para badges de estado */
+.statusBadge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.statusPagada {
+  background-color: rgba(74, 222, 128, 0.2);
+  color: #16a34a;
+}
+
+.statusPendiente {
+  background-color: rgba(251, 191, 36, 0.2);
+  color: #d97706;
+}
+
+.statusVencida {
+  background-color: rgba(248, 113, 113, 0.2);
+  color: #dc2626;
+}
+
 @media (max-width: 1200px) {
   .chartsContainer {
     grid-template-columns: repeat(2, 1fr);
@@ -70,6 +306,38 @@
   
   .chartItem:last-child {
     grid-column: span 1;
+  }
+  
+  .formGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .fullWidth {
+    grid-column: span 1;
+  }
+  
+  .formActions {
+    flex-direction: column-reverse;
+  }
+  
+  .cancelButton,
+  .submitButton,
+  .addButton {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .tableContainer {
+    padding: 1rem;
+  }
+  
+  .table th, .table td {
+    padding: 0.75rem 0.5rem;
+  }
+  
+  .description {
+    max-width: 100px;
   }
 }
 

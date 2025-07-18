@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import Sidebar from './Sidebar';
 import Toolbar from './Toolbar';
 import SummaryCard from './SummaryCard';
@@ -372,9 +373,14 @@ const cobrosPendientesData = [
 
 const CobrosPage = () => {
   const [sidebarExpanded, setSidebarExpanded] = useState(false);
+  const router = useRouter();
 
   const handleSidebarToggle = (expanded) => {
     setSidebarExpanded(expanded);
+  };
+  
+  const navigateToGestion = () => {
+    router.push('/cobros/gestion');
   };
 
   return (
@@ -383,7 +389,31 @@ const CobrosPage = () => {
       <div className={`${styles.mainContent} ${sidebarExpanded ? styles.contentWithExpandedSidebar : ''}`}>
         <Toolbar />
         <div className={styles.contentWrapper}>
-          <h1 style={{ marginBottom: '1.5rem', color: 'var(--text-color)' }}>Cobros Recibidos vs Pendientes</h1>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
+            <h1 style={{ color: 'var(--text-color)' }}>Cobros Recibidos vs Pendientes</h1>
+            <button 
+              onClick={navigateToGestion}
+              style={{
+                padding: '0.75rem 1.25rem',
+                border: 'none',
+                borderRadius: '8px',
+                backgroundColor: 'var(--accent-color)',
+                color: 'white',
+                fontWeight: '500',
+                cursor: 'pointer',
+                transition: 'all 0.2s ease',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.5rem'
+              }}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+              </svg>
+              Gestionar Cobros
+            </button>
+          </div>
           
           {/* Tarjetas de resumen */}
           <div className={styles.summaryCards}>

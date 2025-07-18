@@ -1,10 +1,13 @@
 import React from 'react';
 import styles from './TransactionsTable.module.css';
 
-const TransactionsTable = ({ transactions }) => {
+const TransactionsTable = ({ transactions, data, title = "Últimas Transacciones" }) => {
+  // Usar data si transactions no está definido
+  const items = transactions || data || [];
+  
   return (
     <div className={styles.tableContainer}>
-      <h3 className={styles.tableTitle}>Últimas Transacciones</h3>
+      <h3 className={styles.tableTitle}>{title}</h3>
       <div className={styles.tableWrapper}>
         <table className={styles.table}>
           <thead>
@@ -17,7 +20,7 @@ const TransactionsTable = ({ transactions }) => {
             </tr>
           </thead>
           <tbody>
-            {transactions.map((transaction, index) => (
+            {items.map((transaction, index) => (
               <tr key={index}>
                 <td>{transaction.name}</td>
                 <td className={styles.description}>
